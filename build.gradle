@@ -1,22 +1,27 @@
-plugins {
-	id 'java'
-}
-
-group = 'org.wcci'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+apply plugin: 'eclipse'
+apply plugin: 'java'
 
 repositories {
-	mavenCentral()
+	jcenter()
 }
 
 dependencies {
-	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
-	testCompile 'org.assertj:assertj-core:3.+'
-	testCompile 'org.mockito:mockito-core:2.+'
+	testCompile 'junit:junit:4.+',
+		'org.hamcrest:hamcrest-core:1.+',
+		'org.hamcrest:hamcrest-library:1.+',
+		'org.mockito:mockito-core:2.+',
+		'org.assertj:assertj-core:3.+'
 }
 
-test {
-	useJUnitPlatform()
+task buildSrcFolders {
+
+	description 'Builds default source folders'
+
+	doLast {
+		mkdir("src/main/java")
+		mkdir("src/test/java")
+	}
 }
+
+tasks.eclipse.dependsOn buildSrcFolders
+
