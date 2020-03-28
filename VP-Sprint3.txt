@@ -1,0 +1,7 @@
+Deliverables
+
+Support for 4 types of pets: Organic Cats, Organic Dogs, Robotic Cats, Robotic Dogs.
+Robots require oil and maintenance.
+Organic cats and dogs require cage & litter box cleaning.
+Walking organic pets decreases the rate at which they soil their cages/litter boxes.
+Walking robotic pets increases their need for oil and maintenance.

@@ -1,0 +1,17 @@
+Deliverables
+All prior functionality, plus:
+
+Don't forget to add tests!
+
+Useful player instructions in the form of a README.md file
+
+Create a VirtualPetShelter class that will be used to manage multiple pets
+
+Ability to intake many pets into the VirtualPetShelter
+Ability for players to see a list of all pets in the shelter, for example with name, species and age
+Ability for players to interact with one pet or multiple pets, such as feed, play, and take to doctor
+Ability for players to see the current status of all pets in a table (see example below for inspiration)
+| Name     | Health | Fatigue |
+| -------- | ------ | ------- |
+| Fido     | 43     | 22      |
+| Fluffles | 63     | 34      |
