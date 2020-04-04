@@ -1,7 +1,7 @@
 # VirtualPet
 VirtualPet project:
 
-Development of a console application by a team that practices agile methodology, utilizes test driven design, and values clean code
+Development of a console application , utilizes test driven design, and values clean code
 Appropriate use of Git and access to your application on GitHub
 Useful player instructions in the form of a README.md file
 An interactive user interface
