@@ -8,7 +8,7 @@ public class VirtualPet {
 	}
 
 	public void setPetName(String petName) {
-		this.petName = petName;
+		this.petName = petName;  
 	} 
 	
 	
