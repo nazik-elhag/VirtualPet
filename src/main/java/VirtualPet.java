@@ -26,5 +26,5 @@ public class VirtualPet {
 		this.getHunger +=10;
 		this.energy--;
 	}
-
+//VirtualPetApp.main();
 }
