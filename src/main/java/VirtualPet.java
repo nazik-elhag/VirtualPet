@@ -29,7 +29,7 @@ public class VirtualPet {
 
 	public void feed() {
 		if(this.getHunger<=10)
-			this.getHunger +=1;
+			this.getHunger -=1;
 		else
 			System.out.println("bet is not hungery any more");
 
