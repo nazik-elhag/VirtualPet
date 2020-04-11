@@ -1,13 +1,15 @@
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 public class VirtualPetTest {
 	@Test
 	public void shouldBeAbleToCreatePet() {
 	    VirtualPet pet = new VirtualPet();
 	}
-
 	@Test
 	public void petShouldHaveName() {
 	    VirtualPet underTest = new VirtualPet("Jeff");
@@ -57,5 +59,39 @@ public class VirtualPetTest {
 		assertEquals(thirst-10,thirstAfterPlay);
 		
 	}
-	
-	}
+    
+
+    @Test
+    public void shouldHaveDefaultBoredom() {
+        VirtualPet underTest = new VirtualPet("carla");
+
+        int expected = underTest.getBoredom();
+
+        assertEquals(expected, 0);
+    }
+
+    @Test
+    public void shouldHaveDefaultThirst() {
+        VirtualPet underTest = new VirtualPet("edward");
+
+        int expected = underTest.getThirst();
+
+        assertEquals(expected, 0);
+    }
+
+
+
+    @Test
+    public void shouldHaveEnoughEnergyToPlay() {
+        VirtualPet pet = new VirtualPet("Kendrick");
+
+        int initiaenergy = pet.getEnergy();
+        pet.play();
+        int energyAfterPlay = pet.getEnergy();
+
+        assertEquals(initiaenergy - 20, energyAfterPlay);
+    }
+
+
+}
+
