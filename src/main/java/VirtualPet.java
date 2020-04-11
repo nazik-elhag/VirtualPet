@@ -26,5 +26,18 @@ public class VirtualPet {
 		this.getHunger +=10;
 		this.energy--;
 	}
-//VirtualPetApp.main();
+
+	public void feed() {
+		if(this.getHunger<=10)
+			this.getHunger +=1;
+		else
+			System.out.println("bet is not hungery any more");
+
+	}
+	public void play() {
+		if(this.energy>=50 )
+			this.energy--;
+		else
+			System.out.println("bet desn't have energy for playing");
+	}
 }
