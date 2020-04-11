@@ -29,6 +29,24 @@ public class VirtualPetTest {
     }
 
     @Test
+    public void shouldHaveDefaultBoredom() {
+        VirtualPet underTest = new VirtualPet("carla");
+
+        int expected = underTest.boredom;
+
+        assertEquals(expected, 85);
+    }
+
+    @Test
+    public void shouldHaveDefaultThirst() {
+        VirtualPet underTest = new VirtualPet("edward");
+
+        int expected = underTest.thirst;
+
+        assertEquals(expected, 0);
+    }
+
+    @Test
     public void shouldTick() {
         VirtualPet pet = new VirtualPet("Kendrick");
 
