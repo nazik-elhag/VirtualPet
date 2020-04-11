@@ -56,5 +56,16 @@ public class VirtualPetTest {
 
         assertEquals(initialHunger + 10, hungerAfterTick);
     }
+
+    @Test
+    public void shouldHaveEnoughEnergyToPlay() {
+        VirtualPet pet = new VirtualPet("Kendrick");
+
+        int initiaenergy = pet.energy;
+        pet.play();
+        int energyAfterPlay = pet.energy;
+
+        assertEquals(initiaenergy - 20, energyAfterPlay);
+    }
 }
 

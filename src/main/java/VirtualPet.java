@@ -36,7 +36,7 @@ public class VirtualPet {
 	}
 	public void play() {
 		if(this.energy>=50 )
-			this.energy--;
+			this.energy -= 20;
 		else
 			System.out.println("bet desn't have energy for playing");
 	}
